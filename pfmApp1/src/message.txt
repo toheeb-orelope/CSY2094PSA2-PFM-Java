@@ -1,0 +1,2 @@
+How to run mobile version on Andriod: npx http-server -p 8081 -c-1 dist/PFMAPP1
+How to run on web version: npm start and head to http://localhost:4200
