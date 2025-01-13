@@ -72,38 +72,10 @@
 			<version>2.2.0</version>
 		</dependency>
 
-			<!-- JavaFX Base Module -->
-			<dependency>
-				<groupId>org.openjfx</groupId>
-				<artifactId>javafx-base</artifactId>
-				<version>20.0.2</version>
-			</dependency>
-
-			<!-- JavaFX Graphics Module -->
-			<dependency>
-				<groupId>org.openjfx</groupId>
-				<artifactId>javafx-graphics</artifactId>
-				<version>20.0.2</version>
-			</dependency>
-
-			<!-- JavaFX Controls Module -->
-			<dependency>
-				<groupId>org.openjfx</groupId>
-				<artifactId>javafx-controls</artifactId>
-				<version>20.0.2</version>
-			</dependency>
-
-			<!-- JavaFX FXML Module (if needed) -->
-			<dependency>
-				<groupId>org.openjfx</groupId>
-				<artifactId>javafx-fxml</artifactId>
-				<version>20.0.2</version>
-			</dependency>
 	</dependencies>
 
 	<build>
 		<plugins>
-			<!-- Maven Compiler Plugin -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -117,31 +89,12 @@
 					</annotationProcessorPaths>
 				</configuration>
 			</plugin>
-
-			<!-- Spring Boot Maven Plugin -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-
-			<!-- Plugin for running JavaFX applications -->
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>exec-maven-plugin</artifactId>
-				<version>3.0.0</version>
-				<configuration>
-					<mainClass>com.ToheebOrelope.PersonalFinancialManagement</mainClass>
-					<arguments>
-						<argument>--module-path</argument>
-						<argument>${java.home}/lib</argument>
-						<argument>--add-modules</argument>
-						<argument>javafx.controls,javafx.fxml</argument>
-					</arguments>
-				</configuration>
-			</plugin>
 		</plugins>
 	</build>
-
 	<repositories>
 		<repository>
 			<id>spring-snapshots</id>
