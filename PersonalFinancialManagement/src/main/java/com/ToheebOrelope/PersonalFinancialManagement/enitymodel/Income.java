@@ -33,7 +33,6 @@ public class Income {
 
     private String description;
 
-
     //This is mapping method to convert income entity to income dto
     public IncomeDTO getIncomeDTO(){
 

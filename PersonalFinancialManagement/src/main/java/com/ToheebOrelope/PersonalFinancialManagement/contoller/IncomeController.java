@@ -15,6 +15,16 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin("*")
 public class IncomeController {
 
+    /*
+Citation:
+(Code Elevate, 2024)
+Reference:
+Code Elevate, 2024. Income & Expense Management System | Angular & Spring Boot Full Stack Tutorial. YouTub. Available at: https://www.youtube.com/watch?v=3lnsWb-RBuE (Accessed: 25/12/2025)
+jetBrains is an AI assistant plugin extension for IntelliJ IDE for faster debugging and code improvement.
+GitHub Copilot is an AI assistant plugin extension for visual studio code IDE for faster debugging and code improvement.
+*/
+
+
     private final IncomeServices incomeServices;
 
     //This is the endpoint to make a request from our

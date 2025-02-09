@@ -15,4 +15,3 @@ public class PersonalFinancialManagementApplication {
 	}
 
 }
-//Using generated security password: efc3edec-b10a-43ad-994e-41ea9b031e62
